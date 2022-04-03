@@ -732,7 +732,8 @@ function addRandomFriend()
 {
   randomNames = ["Ryan", "Matthew", "Jared", "Eeperson", "Ronald", "Goldman", "Mr. B", "Goat", "otherName", "testName", "Mike", "Alan", "Row", "T dog", "Redbull"];  
   randName = randomNames[floor(random(0,randomNames.length -1))];
-  let newFriend = new Friend(randName, "data", int(random(0,faceList.length)),color(random(0,255), random(0,255), random(0,255)),color(random(0,255), random(0,255), random(0,255)));
+  let newStater = new liftStats([random(10,500), random(10,500), random(10,500), random(10,500), random(10,500)]);
+  let newFriend = new Friend(randName, newStater, int(random(0,faceList.length)),color(random(0,255), random(0,255), random(0,255)),color(random(0,255), random(0,255), random(0,255)));
   append(friendList, newFriend);
   friendTab.populate(friendList);
 }
